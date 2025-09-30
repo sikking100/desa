@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('budgets', function (Blueprint $table) {
             $table->id();
             $table->string('year');
-            $table->int('income')->default(0);
-            $table->int('expense')->default(0);
-            $table->int('financing')->default(0);
-            $table->int('realization')->default(0);
+            $table->integer('income')->default(0);
+            $table->integer('expense')->default(0);
+            $table->integer('financing')->default(0);
+            $table->integer('realization')->default(0);
             $table->text('file')->nullable();
             $table->timestamps();
         });

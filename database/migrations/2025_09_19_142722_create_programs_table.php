@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name', 255);
             $table->text('description');
             $table->string('location', 255);
-            $table->int('budget')->default(0);
+            $table->integer('budget')->default(0);
             $table->enum('status', ['0', '1', '2'])->default('0');
             $table->timestamps();
         });
